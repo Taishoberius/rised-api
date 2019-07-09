@@ -1,0 +1,49 @@
+{
+  "name": "preferences",
+  "plural": "preferences",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "weather": {
+      "type": "number",
+      "required": true
+    },
+    "address": {
+      "type": "object"
+    },
+    "workAddress": {
+      "type": "object"
+    },
+    "transportType": {
+      "type": "string",
+      "required": true,
+      "default": "vehicule"
+    },
+    "temperature": {
+      "type": "boolean",
+      "required": true
+    },
+    "humidity": {
+      "type": "boolean",
+      "required": true
+    },
+    "itinerary": {
+      "type": "boolean",
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "deviceName": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
